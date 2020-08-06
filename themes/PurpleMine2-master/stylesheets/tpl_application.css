@@ -1,0 +1,230 @@
+@import url(../../../../../plugins/redmine_agile/assets/stylesheets/redmine_agile.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap');
+
+/*font-family Open san*/
+body { 
+    font-family:'Open sans','Arial';
+}
+
+/*top menu background color -- faint green */
+#top-menu { 
+    background:#6CB107; 
+    color: white;
+}
+
+/*top menu text color */
+#top-menu a {
+    color: white
+}
+
+/*header color bluish */
+#header { 
+    background-color: #2462ad;
+}
+
+/*remove footer*/
+#footer { 
+    display:none;
+}
+
+/* On myDashboard IssueAssignedToMe make width 100% */
+#block-issuesassignedtome { 
+    width:100%; 
+}
+
+/*on navbar add bottom border color same as header color */
+#main-menu>ul>li>a.selected {
+    border-bottom: 3px solid #2462ad;
+}
+
+/*On myDashboard IssueAssignedToMe id through left is removed */
+#my-page #list-left {
+   width: 100%;
+   padding-right: 1px;
+   float: none;
+}
+
+/*On myDashboard IssueAssignedToMe id through right is removed */
+#my-page #list-right {
+	width:100%;
+	padding-left:1px;
+	float:none
+}
+
+/*on Issue details page added box */
+.issue.details {
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 10px 2px #EFEFEF;
+    transition: 0.3s;
+}
+
+/*on Issue details page added box */
+#history {
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 10px 2px #EFEFEF;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+/*on Issue details page added box */
+#update {
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 10px 2px #EFEFEF;
+    transition: 0.3s;
+    margin-top: 20px;   
+}
+
+/*on Issue details applied css to Edit word */
+#update h3 {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;	
+}
+
+/*on Issue details margin and width is added to first box*/
+.issue .splitcontent .attribute .label {
+    width: 160px;
+    margin-left: -150px;
+}
+
+/*on Issue details margin is added on first box's next/prev link*/
+.issue.details .next-prev-links {
+    margin-left: 5px;
+}
+
+/*css added to Add word on Issue details in first box [Subject of story] */
+.issue.details>.subject h3 {
+    margin-left: -55px;
+}
+
+/* css added to Add word on Issue details in second box [history] */
+b, strong {
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+/*css added to Add word on Issue details in first box [author of story] */
+.issue.details>.author {
+    margin-bottom: 20px;
+    margin-left: -52px;
+}
+
+/*css added to Add word on Issue details in first box [subtask] */
+.issue.details>.subject p {
+    margin-bottom: 5px;
+    font-size: .86em;
+    margin-left: -55px;
+}
+
+
+/*table card width (agile board)*/
+table.list.issues-board th, table.list .table-list-header {
+    padding: 8px;
+    min-width: 250px;
+    border: 2px solid #e3e5ed;
+    border-width: 0 0 2px;
+    background-color: #fff;
+    color: #717894;
+    vertical-align: bottom;
+    width: 250px;
+}
+
+/*agile board scrollbar height and margin issue*/
+table.list.issues-board {
+    width: 100%;
+    margin-bottom: 0;
+    font-size: .92em;
+}
+
+/* add scrollbar to table (agile board)*/
+.container-fixed {
+	overflow-x: auto;
+}
+
+/*Hide jump to project dropdown*/
+#project-jump .drdn-trigger {
+    display: none;
+}
+
+/*add space between progress bar and subject of story */
+.agile-board .issue-card .checklist, .agile-board .issue-card .info, .agile-board .issue-card .sub-issues {
+    margin-top: 40px;
+}
+
+/*Fix card height on agile board*/
+.agile-board .issue-card {
+    height: 150px;
+}
+
+/*on select any issue background color same as tpl color*/
+#wrapper .context-menu-selection, #wrapper .context-menu-selection>td {
+    background-color: #2462ad !important;
+    color: #fff !important;
+}
+
+/*On issue page dropdown [...] button backdround color*/
+.contextual .drdn.expanded>.drdn-trigger {
+    border-color: #2462ad;
+    background-color: #2462ad;
+    color: #fff;
+}
+
+/*On add watcher model header background color*/
+.ui-widget-header {
+    background: #2462ad;
+}
+
+/*On add watcher model x [cancel] sign background color*/
+.ui-widget-header a.ui-state-default, .ui-widget-header button.ui-state-default {
+    border-color: #2462ad;
+    background: #2462ad;
+    color: #fff;
+}
+
+/*Open button on roadmap page */
+.badge-status-open {
+    border-radius: 20px;
+    width: 80px;
+}
+
+/*On new issue while adding discription loader while priviewing content*/
+#ajax-indicator {
+    border: 1px solid #2462ad;
+    border-radius: 0px;
+    opacity: .9;
+    background-color:#FFFFFF;
+    color: black;
+}  
+
+/*Pagination button background color*/
+.pagination .page.current, .pagination .current>span {
+    border-color: #2462ad;
+    background-color: #2462ad;
+    border: 1px solid #2462ad;
+    color: #fff;
+}
+
+/*text-aliggn left on issue page in table */
+table.list td {
+    text-align: left;
+}
+
+/*text-aliggn left on prodject page in table */
+table.list th, table.list .table-list-header {
+    text-align: left;
+}
+
+/*text-aliggn left on Overview page in table */
+.box table.list th, .box table.list .table-list-header {
+    text-align: left;
+}
+
+/*
+/*div.wiki {
+    margin-bottom: 0;
+    width: 200px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}*/
+

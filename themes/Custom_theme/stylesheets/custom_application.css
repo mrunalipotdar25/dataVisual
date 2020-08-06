@@ -1,0 +1,140 @@
+@import url(../../PurpleMine2-master/stylesheets/application.css);
+@import url(../../../../../plugins/redmine_agile/assets/stylesheets/redmine_agile.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap');
+
+/*font-family Open san*/
+body{ 
+font-family:'Open sans','Arial';
+}
+
+/*top menu background color -- faint green */
+#top-menu { background:#6CB107; color: white;}
+
+
+/*top menu text color */
+#top-menu a {color: white}
+
+/*header color bluish */
+#header { background-color: #2462ad;}
+
+/*remove footer*/
+#footer { display:none;}
+
+/* On myDashboard IssueAssignedToMe make width 100% */
+#block-issuesassignedtome { width:100%; }
+
+/*on navbar add bottom border color same as header color */
+#main-menu>ul>li>a.selected {
+    border-bottom: 3px solid #2462ad;
+}
+
+/*On myDashboard IssueAssignedToMe id through left is removed */
+#my-page #list-left {
+   width: 100%;
+   padding-right: 1px;
+   float: none;
+}
+
+/*On myDashboard IssueAssignedToMe id through right is removed */
+#my-page #list-right {
+	width:100%;
+	padding-left:1px;
+	float:none
+}
+
+/*on Issue details page added box */
+
+.issue.details {
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 10px 2px #EFEFEF;
+    transition: 0.3s;
+}
+/*on Issue details page added box */
+#history {
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 10px 2px #EFEFEF;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+/*on Issue details page added box */
+#update {
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 10px 2px #EFEFEF;
+    transition: 0.3s;
+    margin-top: 20px;
+   
+}
+/*on Issue details applied css to Edit word */
+#update h3 {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;	
+}
+
+/*on Issue details margin and width is added to first box*/
+.issue .splitcontent .attribute .label {
+    width: 160px;
+    margin-left: -150px;
+}
+/*on Issue details margin is added on first box's next/prev link*/
+.issue.details .next-prev-links {
+    margin-left: 5px;
+}
+
+/*css added to Add word on Issue details in first box [Subject of story] */
+.issue.details>.subject h3 {
+    margin-left: -55px;
+}
+
+/* css added to Add word on Issue details in second box [history] */
+b, strong {
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+/*css added to Add word on Issue details in first box [author of story] */
+.issue.details>.author {
+    margin-bottom: 20px;
+    margin-left: -52px;
+}
+/*css added to Add word on Issue details in first box [subtask] */
+.issue.details>.subject p {
+    margin-bottom: 5px;
+    font-size: .86em;
+    margin-left: -55px;
+}
+
+/*on Issue details submit button */
+input[type="button"], input[type="submit"], input[type="reset"], button {
+    margin-left: 15px;
+}
+
+
+/*agile board redmine_agile.css file */
+table.list.issues-board {
+    table-layout: auto;
+}
+table.list.issues-board th {overflow: hidden; text-overflow: ellipsis;padding-left: 17px;}
+
+/*table card width (agile board)*/
+table.list.issues-board th, table.list .table-list-header {
+    padding: 8px;
+    min-width: 250px;
+    border: 2px solid #e3e5ed;
+    border-width: 0 0 2px;
+    background-color: #fff;
+    color: #717894;
+    vertical-align: bottom;
+    width: 250px;
+}
+
+/*agile board scrollbar height and margin issue*/
+table.list.issues-board {
+    width: 100%;
+    margin-bottom: 0;
+    font-size: .92em;
+}
+/* add scrollbar to table (agile board)*/
+.container-fixed {
+	overflow-x: auto;
+}
